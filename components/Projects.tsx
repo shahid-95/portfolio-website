@@ -45,9 +45,7 @@ export default function Projects() {
         "Secure online voting platform for students with authentication and live results.",
       tech: ["Next.js","Node","MongoDB"],
       image: null,
-      live: "#",
-      code: "#",
-      upcoming: true,
+      upcoming:true,
     },
   ];
 

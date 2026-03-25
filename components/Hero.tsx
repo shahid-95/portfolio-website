@@ -28,9 +28,9 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-[60vh] sm:min-h-[70vh] lg:min-h-[85vh] flex items-start lg:items-center justify-center text-white overflow-hidden">
+    <section className="relative w-full min-h-[60vh]  lg:min-h-[85vh] flex items-start lg:items-center justify-center text-white overflow-hidden">
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-20 items-center pt-6 sm:pt-10 lg:pt-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-16 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-20 items-center pt-6 sm:pt-10 lg:pt-0">
 
         {/* LEFT */}
         <motion.div
