@@ -22,7 +22,7 @@ export default function Hero() {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut" as const, // ✅ FIX
+        ease: "easeOut" as const,
       },
     },
   };
@@ -37,7 +37,7 @@ export default function Hero() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="space-y-3 sm:space-y-4 lg:space-y-6 text-center lg:text-left"
+          className="space-y-3 sm:space-y-4 lg:space-y-6 text-center lg:text-left lg:col-span-1"
         >
 
           <motion.h1
@@ -97,7 +97,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="hidden lg:flex justify-center"
+          className="hidden lg:flex justify-center lg:col-span-1"
         >
           <Tilt
             tiltMaxAngleX={15}

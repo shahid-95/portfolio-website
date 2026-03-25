@@ -54,16 +54,14 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full text-white py-20 pl-7 px-6 lg:px-20 overflow-hidden"
+      className="relative w-full text-white py-18 pl-7 px-6 lg:px-20 overflow-hidden"
     >
       <div className="relative z-10 w-full max-w-[1680px] mx-auto">
 
-        {/* Title */}
         <div className="flex items-center gap-4 mb-14">
           <h2 className="text-3xl font-bold">Projects I've Built</h2>
         </div>
 
-        {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {projects.map((project, index) => (
@@ -97,8 +95,8 @@ export default function Projects() {
                         />
                       )}
 
-                      {/* Buttons */}
-                      <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition">
+                      {/* Buttons (Desktop only) */}
+                      <div className="hidden md:flex absolute inset-0 items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition">
                         
                         <a
                           href={project.live}
@@ -140,7 +138,36 @@ export default function Projects() {
                     {project.title}
                   </h3>
 
-                  {/* 🔥 Animated Detail */}
+                  {/* 📱 Mobile Buttons */}
+                  <div className="flex md:hidden justify-center gap-10 mt-4">
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-cyan-500 text-black p-3 rounded-md"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-black/70 border border-gray-600 p-3 rounded-md"
+                    >
+                      <FaGithub />
+                    </a>
+
+                    <button
+                      onClick={() =>
+                        setOpenIndex(openIndex === index ? null : index)
+                      }
+                      className="bg-purple-600 p-2 rounded-md"
+                    >
+                      Detail
+                    </button>
+                  </div>
+
                   <AnimatePresence>
                     {openIndex === index && !project.upcoming && (
                       <motion.div

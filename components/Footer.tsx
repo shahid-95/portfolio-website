@@ -21,7 +21,7 @@ export default function Footer() {
   }, []);
 
   const scrollTop = () => {
-    window.scrollTo({
+    document.documentElement.scrollTo({
       top: 0,
       behavior: "smooth",
     });
@@ -63,8 +63,10 @@ export default function Footer() {
       {/* Small Scroll To Top Button */}
       <button
         onClick={scrollTop}
-        className={`fixed bottom-8 right-8 bg-cyan-500 text-black w-7 h-7 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 ${
-          showButton ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        className={`fixed bottom-8 right-8 z-50 bg-cyan-500 text-black w-7 h-7 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 ${
+          showButton
+            ? "translate-y-0 opacity-100 pointer-events-auto"
+            : "translate-y-20 opacity-0 pointer-events-none"
         }`}
       >
         <FaArrowUp className="text-sm" />

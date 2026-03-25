@@ -36,7 +36,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative w-full text-white py-20 px-4 pl-8 sm:px-6 lg:px-16 overflow-hidden"
+      className="relative w-full text-white py-18 px-4 pl-8 sm:px-6 lg:px-16 overflow-hidden"
     >
 
       {/* 🔥 subtle background glow (no spacing impact) */}
@@ -55,11 +55,11 @@ export default function Skills() {
         <div
           className="
           grid justify-items-start
-          grid-cols-3 
+          grid-cols-4 
           sm:grid-cols-4 
           md:grid-cols-5 
           lg:grid-cols-6 
-          xl:grid-cols-7 
+          xl:grid-cols-8 
           gap-6 sm:gap-8
           "
         >

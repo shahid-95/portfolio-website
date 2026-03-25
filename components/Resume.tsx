@@ -6,7 +6,7 @@ export default function Resume() {
   return (
     <section
       id="resume"
-      className="relative w-full text-white pl-7 py-16 sm:py-20 px-4 sm:px-6 lg:px-16 overflow-hidden"
+      className="relative w-full text-white pl-7 py-16 sm:py-18 px-4 sm:px-6 lg:px-16 overflow-hidden"
     >
       <div className="relative z-10 w-full max-w-[1680px] mx-auto">
 
