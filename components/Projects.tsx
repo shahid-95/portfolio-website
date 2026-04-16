@@ -40,12 +40,14 @@ export default function Projects() {
       upcoming: false,
     },
     {
-      title: "20L Water Can Delivery System ",
+     title: "E-Commerce Website",
       description:
-        "Secure online voting platform for students with authentication and live results.",
-      tech: ["Next.js","Node","MongoDB"],
-      image: null,
-      upcoming:true,
+        "A full-service ecommerce platform offering POP materials and professional interior services, enabling users to seamlessly order products and book skilled installations for modern interior spaces.",
+      tech: ["Next.js","Tailwind CSS","JavaScript"],
+      image: "/projects/ee.png",
+      live: "https://indiaplasters.netlify.app/",
+      code: "https://github.com/shahidd95/india-plasters",
+      upcoming: false,
     },
   ];
 
