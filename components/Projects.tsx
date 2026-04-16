@@ -46,7 +46,7 @@ export default function Projects() {
       tech: ["Next.js","Tailwind CSS","JavaScript"],
       image: "/projects/ee.png",
       live: "https://indiaplasters.netlify.app/",
-      code: "https://github.com/shahidd95/india-plasters",
+      code: "https://github.com/shahid-95/india-plasters",
       upcoming: false,
     },
   ];
