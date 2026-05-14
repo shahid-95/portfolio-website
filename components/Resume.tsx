@@ -50,7 +50,7 @@ export default function Resume() {
 
             {/* BUTTON */}
             <a
-              href="/shahid-resume.pdf"
+              href="/shahid_resume.pdf"
               download
               className="inline-flex items-center gap-3 bg-cyan-500 text-black px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-cyan-400 transition duration-300 shadow-lg shadow-cyan-500/20 text-sm sm:text-base"
             >
