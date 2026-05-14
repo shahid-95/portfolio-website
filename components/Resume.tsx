@@ -65,14 +65,14 @@ export default function Resume() {
             {/* 👆 added lg:justify-end + lg:pr-6 */}
 
             <a
-              href="/shahid-resume.pdf"
+              href="/shahid_resume.pdf"
               target="_blank"
               className="relative w-full max-w-sm sm:max-w-md group"
             >
 
               {/* PDF */}
               <iframe
-                src="/shahid-resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                src="/shahid_resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
                 className="w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl blur-sm opacity-70 border border-gray-800"
               />
 
