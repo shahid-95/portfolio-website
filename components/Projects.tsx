@@ -10,39 +10,39 @@ export default function Projects() {
 
   const projects = [
     {
-  title: "CanFinity – Smart Water Can Delivery System",
-  description:
-    "A full-stack water can delivery platform that enables customers to order 20L water cans, manage subscriptions, track deliveries, and make secure payments through a modern and responsive interface. The system also includes an admin dashboard for managing users, orders, and deliveries.",
-  tech: [
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "JavaScript",
-    "Firebase",
-  ],
-  image: "/projects/canfinity.png",
-  live: "https://watercandelivery.vercel.app/",
-  code: "https://github.com/shahid-95/waterdelivery",
-  upcoming: false,
-},
+      title: "CanFinity – Smart Water Can Delivery System",
+      description:
+        "A full-stack water can delivery platform that enables customers to order 20L water cans, manage subscriptions, track deliveries, and make secure payments through a modern and responsive interface. The system also includes an admin dashboard for managing users, orders, and deliveries.",
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JavaScript",
+        "Firebase",
+      ],
+      image: "/projects/canfinity.png",
+      live: "https://watercandelivery.vercel.app/",
+      code: "https://github.com/shahid-95/waterdelivery",
+      upcoming: false,
+    },
     {
-  title: "ZenVest – Personal Finance Management System",
-  description:
-    "A full-stack personal finance management application that helps users track income, expenses, budgets, and savings goals. Built with a React.js frontend and a Python (FastAPI) backend, it provides secure JWT authentication, RESTful APIs, real-time financial insights, and an intuitive dashboard for better money management.",
-  tech: [
-    "React.js",
-    "Python",
-    "FastAPI",
-    "SQLite",
-    "JavaScript",
-    "JWT",
-  ],
-  image: "/projects/zenvest1.png",
-  live: "https://zenvest1.vercel.app",
-  code: "https://github.com/shahid-95/ZenVest",
-  upcoming: false,
-},
+      title: "ZenVest – Personal Finance Management System",
+      description:
+        "A full-stack personal finance management application that helps users track income, expenses, budgets, and savings goals. Built with a React.js frontend and a Python (FastAPI) backend, it provides secure JWT authentication, RESTful APIs, real-time financial insights, and an intuitive dashboard for better money management.",
+      tech: [
+        "React.js",
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "JavaScript",
+        "JWT",
+      ],
+      image: "/projects/zenvest1.png",
+      live: "https://zenvest1.vercel.app",
+      code: "https://github.com/shahid-95/ZenVest",
+      upcoming: false,
+    },
     {
       title: "E-Commerce Website",
       description:
@@ -61,16 +61,6 @@ export default function Projects() {
       image: "/projects/simon.png",
       live: "https://colortabgame.vercel.app/",
       code: "https://github.com/shahidd95/ColorTab-Game",
-      upcoming: false,
-    },
-     {
-      title: "WonderLust Travel",
-      description:
-        "A full-stack web application inspired by Airbnb that allows users to explore travel destinations, view property listings, and manage accommodations. The platform includes features such as browsing listings, viewing property details, and basic user interaction. This project demonstrates my skills in building dynamic web applications using modern web technologies and database integration.",
-      tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Render"],
-      image: "/projects/airbnb.png",
-      live: "https://wonderlust-travel.onrender.com/",
-      code: "https://github.com/shahidd95/WonderLust-hotel",
       upcoming: false,
     },
    
@@ -145,6 +135,7 @@ export default function Projects() {
                     >
                       <FaExternalLinkAlt className="text-sm" />
                     </a>
+
                     <a
                       href={project.code}
                       target="_blank"
