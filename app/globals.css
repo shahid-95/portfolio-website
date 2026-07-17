@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0E17;
+  --surface: #10141F;
+  --surface-2: #151A28;
+  --foreground: #F2F1EC;
+  --muted: #8B93A3;
+  --muted-2: #5E6577;
+  --accent: #D98B3F;
+  --accent-strong: #F0A659;
+  --accent-soft: rgba(217, 139, 63, 0.12);
+  --border: rgba(242, 241, 236, 0.09);
+  --border-strong: rgba(242, 241, 236, 0.16);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+  --font-mono: var(--font-jetbrains);
+  --breakpoint-xs: 22.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+.eyebrow {
+  font-family: var(--font-jetbrains), ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hairline {
+  background: linear-gradient(90deg, var(--border-strong), transparent);
+  height: 1px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #0A0E17;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* prevents horizontal scroll from any full-bleed decorative elements */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Fluid spacing / type utilities — scale smoothly between breakpoints
+   instead of jumping at fixed steps. */
+.section-pad {
+  padding-left: clamp(1.1rem, 4vw, 4rem);
+  padding-right: clamp(1.1rem, 4vw, 4rem);
+}
+
+.section-pad-y {
+  padding-top: clamp(2.75rem, 6vw, 5.5rem);
+  padding-bottom: clamp(2.75rem, 6vw, 5.5rem);
+}
+
+.text-hero {
+  font-size: clamp(2.1rem, 4.2vw + 1.1rem, 4.2rem);
+  line-height: 1.06;
+}
+
+.text-h2 {
+  font-size: clamp(1.5rem, 1.6vw + 1.1rem, 2.4rem);
+  line-height: 1.15;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
